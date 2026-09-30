@@ -1,0 +1,29 @@
+{
+  "_note": "All venues are FICTIONAL demo data placed around Shamshabad town centre. Edit freely.",
+  "landmarks": [
+    {"name": "Shamshabad town centre", "lat": 17.2603, "lng": 78.3969}
+  ],
+  "stalls": [
+    {"name": "Golden Pani Puri Cart",       "kind": "street_food", "lat": 17.26115, "lng": 78.39580},
+    {"name": "Blue Door Biryani Point",     "kind": "restaurant",  "lat": 17.25980, "lng": 78.39820},
+    {"name": "Morning Dosa Cart",           "kind": "street_food", "lat": 17.26210, "lng": 78.39740},
+    {"name": "Spice Route Chaat Corner",    "kind": "street_food", "lat": 17.25890, "lng": 78.39610},
+    {"name": "Chai and Samosa Stand",       "kind": "tea_snack",   "lat": 17.26040, "lng": 78.40010},
+    {"name": "Corner Juice Bar",            "kind": "tea_snack",   "lat": 17.26160, "lng": 78.39890},
+    {"name": "Sunrise Tiffin Centre",       "kind": "restaurant",  "lat": 17.25820, "lng": 78.39880},
+    {"name": "Bus Stand Bhel Cart",         "kind": "street_food", "lat": 17.26290, "lng": 78.39560},
+    {"name": "Highway Dhaba Grill",         "kind": "restaurant",  "lat": 17.25740, "lng": 78.39720},
+    {"name": "Momo Wagon",                  "kind": "street_food", "lat": 17.26080, "lng": 78.39420},
+    {"name": "Sugarcane Juice Cart",        "kind": "tea_snack",   "lat": 17.25950, "lng": 78.40130},
+    {"name": "Night Owl Egg Roll Cart",     "kind": "street_food", "lat": 17.26340, "lng": 78.39830},
+    {"name": "Temple Road Idli Stall",      "kind": "street_food", "lat": 17.25680, "lng": 78.39510},
+    {"name": "Green Leaf Mess",             "kind": "restaurant",  "lat": 17.26250, "lng": 78.40060},
+    {"name": "Fresh Fry Mirchi Bajji Cart", "kind": "street_food", "lat": 17.25850, "lng": 78.39330},
+    {"name": "Metro Corner Shawarma",       "kind": "restaurant",  "lat": 17.26400, "lng": 78.39680}
+  ],
+  "background": [
+    {"stall": "Highway Dhaba Grill", "cases": 3, "meal_hours_ago": 30},
+    {"stall": "Corner Juice Bar",    "cases": 2, "meal_hours_ago": 40},
+    {"stall": "Bus Stand Bhel Cart", "cases": 1, "meal_hours_ago": 20}
+  ]
+}

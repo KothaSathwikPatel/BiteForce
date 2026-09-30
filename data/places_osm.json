@@ -1,0 +1,107 @@
+{
+ "_note": "(c) OpenStreetMap contributors, ODbL",
+ "places": [
+  {
+   "name": "Hyderabad House",
+   "kind": "restaurant",
+   "lat": 17.260048,
+   "lng": 78.386917
+  },
+  {
+   "name": "Airport Lounge",
+   "kind": "restaurant",
+   "lat": 17.241864,
+   "lng": 78.42952
+  },
+  {
+   "name": "Harleys",
+   "kind": "tea_snack",
+   "lat": 17.235188,
+   "lng": 78.433782
+  },
+  {
+   "name": "Minerva",
+   "kind": "tea_snack",
+   "lat": 17.235668,
+   "lng": 78.434234
+  },
+  {
+   "name": "Millet Travels",
+   "kind": "tea_snack",
+   "lat": 17.235571,
+   "lng": 78.434252
+  },
+  {
+   "name": "United Kitchen",
+   "kind": "restaurant",
+   "lat": 17.235668,
+   "lng": 78.434325
+  },
+  {
+   "name": "Almond House",
+   "kind": "street_food",
+   "lat": 17.235199,
+   "lng": 78.43404
+  },
+  {
+   "name": "Doner & Gyros",
+   "kind": "restaurant",
+   "lat": 17.235578,
+   "lng": 78.434319
+  },
+  {
+   "name": "Terracotta Italian Kitchen",
+   "kind": "restaurant",
+   "lat": 17.235512,
+   "lng": 78.434314
+  },
+  {
+   "name": "Vibrant Living",
+   "kind": "restaurant",
+   "lat": 17.235409,
+   "lng": 78.434265
+  },
+  {
+   "name": "Suruchi",
+   "kind": "tea_snack",
+   "lat": 17.31768,
+   "lng": 78.403224
+  },
+  {
+   "name": "Sri Siddi Chamundeshwari",
+   "kind": "tea_snack",
+   "lat": 17.32112,
+   "lng": 78.371358
+  },
+  {
+   "name": "Collection O 209 Sivarampalli (Galaxy Hotal)",
+   "kind": "restaurant",
+   "lat": 17.322384,
+   "lng": 78.430635
+  },
+  {
+   "name": "Mehfil",
+   "kind": "restaurant",
+   "lat": 17.316464,
+   "lng": 78.449034
+  },
+  {
+   "name": "ali's cafe",
+   "kind": "tea_snack",
+   "lat": 17.33983,
+   "lng": 78.369599
+  },
+  {
+   "name": "Deccan Elite Restaurant",
+   "kind": "restaurant",
+   "lat": 17.346203,
+   "lng": 78.415582
+  },
+  {
+   "name": "hostel mess",
+   "kind": "restaurant",
+   "lat": 17.251719,
+   "lng": 78.305327
+  }
+ ]
+}
