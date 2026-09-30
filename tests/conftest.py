@@ -12,7 +12,13 @@ NOW = datetime(2026, 9, 30, 12, 0, tzinfo=UTC)
 @pytest.fixture
 def now() -> datetime:
     return NOW
+@pytest.fixture(autouse=True)
+def _fictional_places_only(monkeypatch: pytest.MonkeyPatch, tmp_path) -> None:
+    """Keep tests independent of local data files (real OpenStreetMap or hand-made places)."""
+    from app import seed
 
+    monkeypatch.setattr(seed, "PLACES_PATH", tmp_path / "no_osm_places.json")
+    monkeypatch.setattr(seed, "MANUAL_PATH", tmp_path / "no_manual_places.json")
 
 def make_case(
     i: int = 0,

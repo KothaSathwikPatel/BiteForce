@@ -30,13 +30,16 @@ def load_seed_data(path: Path = SEED_PATH) -> dict[str, Any]:
 
 
 def load_places(
-    seed_path: Path = SEED_PATH, places_path: Path = PLACES_PATH, manual_path: Path = MANUAL_PATH
-) -> list[dict[str, Any]]:
+       seed_path: Path | None = None, places_path: Path | None = None, manual_path: Path | None = None
+   ) -> list[dict[str, Any]]:
     """Venues to put on the map: real OpenStreetMap places if downloaded, else the fictional set.
 
     The few fictional demo venues that carry the pre-seeded Watch/Alert stay on the map either
     way, so a real business never shows a fake warning.
     """
+    seed_path = seed_path or SEED_PATH
+    places_path = places_path or PLACES_PATH  # resolved at call time so tests can point elsewhere
+    manual_path = manual_path or MANUAL_PATH
     seed = load_seed_data(seed_path)
     real: list[dict[str, Any]] = []
     for path in (manual_path, places_path):  # hand-collected places first: their coordinates win
