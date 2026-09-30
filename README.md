@@ -70,7 +70,7 @@ Tests and lint:
 
 ```bash
 pip install -r requirements-dev.txt
-pytest          # 123 tests, ~99% coverage
+   pytest          # 146 tests, 98% coverage
 ruff check .
 ```
 
@@ -121,6 +121,7 @@ Put them in `data/places_manual.json` (same format as `places_osm.json`: name, k
 3. In Vercel choose *Add New Project*, import the repo (no build settings needed).
 4. Add the environment variables above, including `DATABASE_URL` and `SECRET_SALT`.
 5. Deploy. Vercel serves `public/` from its CDN and `/api/*` through `api/index.py`.
+   Live demo: https://biteforce.vercel.app
 
 No domain purchase is needed; Vercel gives a free `*.vercel.app` URL.
 
