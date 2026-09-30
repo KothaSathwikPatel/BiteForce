@@ -8,6 +8,19 @@ Built for OptiForge 2026 (IEEE EMBS x CIS), track 06 Open Innovation.
 
 > **Demo notice.** All venues, cases and the "FSSAI" inbox in this repository are fictional demo data. Emails are labelled `[BiteTrace DEMO]` and go to a team-owned inbox, never to a real authority.
 
+## Track fit and impact
+
+**Track 06, Open Innovation: CIS x EMBS.** BiteTrace applies computational intelligence (statistical
+anomaly detection, trust-weighted evidence, and an AI reviewer with guardrails) to a biomedical
+surveillance problem: finding a real single-source foodborne-illness cluster in sparse, noisy,
+crowd-reported data.
+
+**UN SDG 3 (Good Health and Well-Being).** The system supports target 3.d, early warning, risk
+reduction and management of health risks: it turns scattered "I got sick" reports into an
+evidence report for a human food-safety officer while the cluster is still small. It also
+supports target 3.9 by pointing inspectors at food sources that may be making people ill.
+BiteTrace flags clusters for inspection; it does not diagnose anyone.
+
 ## The problem
 
 Foodborne illness in India is heavily under-reported. Each victim sees a bad stomach; nobody sees that ten strangers ate at the same cart on the same evening. Health authorities usually learn of an outbreak after hospitalisations, days late. BiteTrace links those isolated reports while the cluster is still small enough to act on. (Cite your own sources for national statistics in the slides; this repo does not embed unverified numbers.)
@@ -70,7 +83,7 @@ Tests and lint:
 
 ```bash
 pip install -r requirements-dev.txt
-   pytest          # 146 tests, 98% coverage
+pytest          # 151 tests, 98% coverage
 ruff check .
 ```
 
@@ -121,9 +134,10 @@ Put them in `data/places_manual.json` (same format as `places_osm.json`: name, k
 3. In Vercel choose *Add New Project*, import the repo (no build settings needed).
 4. Add the environment variables above, including `DATABASE_URL` and `SECRET_SALT`.
 5. Deploy. Vercel serves `public/` from its CDN and `/api/*` through `api/index.py`.
-   Live demo: https://biteforce.vercel.app
 
 No domain purchase is needed; Vercel gives a free `*.vercel.app` URL.
+
+Live demo: https://biteforce.vercel.app
 
 ## Project layout
 

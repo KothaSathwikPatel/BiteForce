@@ -1,4 +1,4 @@
-"""Geospatial helpers: distance, snapping a dropped pin to a known stall, area check."""
+"""Geospatial helpers: distance, snapping a dropped pin to a known stall, geofence (service-area) check."""
 
 from __future__ import annotations
 

@@ -1,5 +1,8 @@
 """Outbreak engine: turn scattered illness reports for one stall into an alert level.
 
+This is the statistical detection core of the surveillance system: space-time clustering of
+sparse, noisy, human-reported cases followed by a significance test against a baseline.
+
 Method (documented in the README):
 1. Keep cases whose meal was within the decay period (14 days).
 2. Cluster = cases within a 72 h exposure window of the newest meal.

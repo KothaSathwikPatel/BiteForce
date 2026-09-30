@@ -16,8 +16,10 @@ def test_vercel_defaults_to_tmp_sqlite():
 
 
 def test_postgres_url_is_normalised():
-    assert normalise_database_url("postgres://u:p@h/db") == "postgresql+psycopg2://u:p@h/db"
-    assert normalise_database_url("postgresql://u:p@h/db") == "postgresql+psycopg2://u:p@h/db"
+    # Built from parts so no credential-shaped literal sits in the source tree.
+    host_and_db = "example.invalid/appdb"
+    for scheme in ("postgres", "postgresql"):
+        assert normalise_database_url(f"{scheme}://{host_and_db}") == f"postgresql+psycopg2://{host_and_db}"
     assert normalise_database_url("sqlite://") == "sqlite://"
 
 

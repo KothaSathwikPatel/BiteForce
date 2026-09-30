@@ -1,4 +1,7 @@
-"""Medical-plausibility checks applied to every report before it is stored."""
+"""Medical-plausibility checks applied to every report before it is stored.
+
+Biomedical rules: incubation window between the meal and symptom onset, and at least one
+gastrointestinal symptom, so implausible reports never reach the detection stage."""
 
 from __future__ import annotations
 

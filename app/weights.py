@@ -1,5 +1,8 @@
 """Anti-abuse weighting: how much each case counts towards an outbreak signal.
 
+Defence against adversarial or fake reports (bot farms, one person on many devices, rival
+sabotage): trust weighting per device and per network before any statistics are computed.
+
 A case never counts for more than 1.0. Suspicious patterns *reduce* weight instead of
 hard-blocking, so genuine clusters (e.g. friends in one hostel) are damped, not silenced.
 """

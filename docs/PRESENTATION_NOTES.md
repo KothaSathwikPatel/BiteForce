@@ -10,7 +10,7 @@ Fifteen people get sick from one cart. Nobody connects them. BiteTrace does.
 4. **How it decides.** Poisson tail test plus coherent meal window, then AI second opinion.
 5. **Anti-abuse (the slide judges remember).** See below.
 6. **Architecture.** Static CDN frontend, FastAPI, Postgres, Resend, Gemini, all on free tiers.
-   7. **Quality.** 146 tests, 98% coverage, ruff clean, CI on every push, secrets in env only.
+7. **Quality.** 151 tests, 98% coverage, ruff clean, CI on every push, secrets in env only.
 8. **Limits and next steps.** Calibrated baselines, authority dashboard, multilingual reporting.
 
 ## Anti-spam and fake-alert precautions (for the PPT)
